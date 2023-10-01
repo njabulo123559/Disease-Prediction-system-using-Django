@@ -1,0 +1,296 @@
+{% extends "basic.html" %}
+{% load static %}
+
+        {% block head %}
+
+
+
+        <!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="{% static 'signin_page/images/icons/favicon.ico' %}"/>
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="{% static 'signin_page/vendor/bootstrap/css/bootstrap.min.css' %}">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="{% static 'signin_page/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="{% static 'signin_page/fonts/iconic/css/material-design-iconic-font.min.css' %}">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="{% static 'signin_page/vendor/animate/animate.css' %}">
+    <!--===============================================================================================-->	
+        <link rel="stylesheet" type="text/css" href="{% static 'signin_page/vendor/css-hamburgers/hamburgers.min.css' %}">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="{% static 'signin_page/vendor/animsition/css/animsition.min.css' %}">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="{% static 'signin_page/vendor/select2/select2.min.css' %}">
+    <!--===============================================================================================-->	
+        <link rel="stylesheet" type="text/css" href="{% static 'signin_page/vendor/daterangepicker/daterangepicker.css' %}">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="{% static 'signin_page/css/util.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'signin_page/css/main.css' %}">
+    <!--===============================================================================================-->
+
+
+<style>
+    .about{
+        text-align:right;
+        margin-top: 10px;
+        font-style: italic;
+    }
+    
+    * {
+        margin:0;
+        padding:0;
+        overflow-x: hidden;
+        }
+    .background {
+        background: #00008b;
+        background-blend-mode: darken;
+        background-size: cover;
+        }
+  
+    .firstsection {
+        height: 100vh;
+        }
+
+    .box-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        max-width: 50%;
+        margin: auto;
+        height: 80%;
+        }
+  
+    .firstHalf {
+        width: 75%;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center
+        }
+    
+    .firstHalf img {
+        display: flex;
+        border-radius: 9050px;
+        }
+  
+    .text-big {
+        color:white;
+        font-family: 'Piazzolla', serif;
+        font-weight: bold;
+        font-size: 45px;
+        text-align: center;
+        }
+  
+    .text-small {
+        color:white;
+        font-family: 'Sansita Swashed', cursive;
+        font-size: 18px;
+        text-align: center;
+        }
+
+    #service {
+        margin: 34px;
+        display: flex;
+        }
+
+    .center {
+        text-align: center;
+        }
+
+    .zoom{
+        background: #d1e6f9;
+         background-size: cover;
+    }
+    .service{
+        height: 100vh;
+    }
+
+    .down{
+        max-width: 50%;
+        margin-top: auto;
+        margin: auto;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;                
+    }
+    .team{
+        margin-top:20px;
+        font-family: 'Piazzolla', serif;
+        font-size: 50px;
+        text-align: center;
+        color:black;
+    }
+    .list{
+        align-items: center;
+        font-size: 50px;
+    }
+    .head1{
+        text-align: center;
+        font-size: 50px;
+        font-style: bold;
+        color:azure;
+    }
+    .move{
+        font-size: 20px;
+        font-style: italic;
+        color: coral;
+    }
+    .names{
+        color:black;
+        font-size:20px;
+        text-align: center;
+        
+    }
+
+
+
+    /*--------------------------------------------------------------
+# Why Us
+--------------------------------------------------------------*/
+.why-us .content {
+  padding: 30px;
+  background: #1977cc;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.why-us .content h3 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.why-us .content p {
+  margin-bottom: 30px;
+}
+
+.why-us .content .more-btn {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 30px 8px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transition: all ease-in-out 0.4s;
+}
+
+.why-us .content .more-btn i {
+  font-size: 14px;
+}
+
+.why-us .content .more-btn:hover {
+  color: #1977cc;
+  background: #fff;
+}
+
+.why-us .icon-boxes .icon-box {
+  text-align: center;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  width: 100%;
+}
+
+.why-us .icon-boxes .icon-box i {
+  font-size: 40px;
+  color: #1977cc;
+  margin-bottom: 30px;
+}
+
+.why-us .icon-boxes .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+.why-us .icon-boxes .icon-box p {
+  font-size: 15px;
+  color: #848484;
+}
+    
+
+
+
+
+
+    
+
+
+
+
+</style>
+
+{% endblock %}
+
+{% block body %}
+
+<section class="background firstsection">
+    <div class="wrapper">
+        <div class="hr">
+            
+            <p class="head1">Our Mission</p>
+            
+            
+           
+        </div>
+    </div>
+    <marquee class="move" behavior="alternate" direction="right">To provide Healthcare solutions to the need.</marquee>
+
+
+    <div class="box-main">
+        <div class="firstHalf">
+            <p class="text-big">About Our Medica</p>
+            <p class="text-small">
+                ​Medica is a very broad environment targeting people who are home sick and also teenagers, maybe you are experiencing something and you don't know what the cause might be medica is here to help.The disease prediction system is perfect this way the person doesn't have to fuss trying to figure out what illness they have they can easily find out with a few taps.
+
+            </p>
+            <br>
+            <p class="center"><a href="#Order" 
+                style="text-decoration:none;color:white;">
+                     Below are the team members</a>
+             </p>
+
+        </div>
+
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="zoom service">
+        
+    <p class="team">Our Team Members</p>
+        <div class="down">
+           
+            <ul class="list">
+                <p class="names">Ndlela Njabulo
+                    <br/>
+                    Buthelezi Ntuthuko
+                    <br/>
+                    Nxumalo Happiness Noxolo
+                    <br/>
+                    Ntshayintshayi Nontokozo S
+                    <br/>
+                    Mkhize Nonduduzo Yolanda
+                </p>
+
+            </ul>
+        </div>
+
+        <div>
+            
+            
+
+        </div>
+
+</section>
+
+
+{% endblock %}
